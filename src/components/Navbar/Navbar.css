@@ -1,0 +1,71 @@
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 6%;
+	background-color: black;
+	position: relative;
+	color: white;
+}
+.navbar-left{
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+.navbar-left .project-Title{
+	cursor: pointer;
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+.navbar-left ul{
+	list-style: none;
+	display: flex;
+	gap: 25px;
+}
+.navbar-left ul li{
+	cursor: pointer;
+}
+.navbar-right .menu-bars{
+	font-size: 28px;
+	cursor: pointer;
+	display: none;
+}
+.sidebar-menu{
+	position: absolute;
+	right: 0;
+	top: 100%;
+	background-color: black;
+	height: 100svh;
+	width: fit-content;
+	padding: 10px 4%;
+	z-index: -1;
+	display: none;
+}
+.sidebar-menu ul{
+	list-style: none;
+}
+.sidebar-menu ul li{
+	margin: 25px 0;
+	cursor: pointer;
+}
+@media screen and (max-width: 900px){
+	.navbar-left ul li{
+		display: none;
+	}
+	.navbar-right .menu-bars{
+		display: block;
+	}
+}
+.navbar-right{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.navbar-right .fav-icon{
+	font-size: 20px;
+	cursor: pointer;
+}
+.navbar-right .user-icon{
+	font-size: 30px;
+	cursor: pointer;
+}

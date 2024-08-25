@@ -1,0 +1,21 @@
+.props_details{
+	color: black;
+	border: 2px solid black;
+	width: 35%;
+	margin: 20px 0;
+	border-radius: 15px;
+	padding: 10px 0;
+}
+.props_details h3{
+	text-align: center;
+}
+.props_details p{
+	padding: 0 6%;
+}
+.product_image_div{
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+}
+
