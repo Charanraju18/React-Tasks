@@ -18,6 +18,13 @@ function Footer() {
       <hr className='logo_hr hr1'/>
     <a  href="#"><img src={logo} width={100} height={90} style={{margin: "auto"}}/></a>
       <hr className='logo_hr hr2'/>
+    </div><br />
+    <div className='copy-right'>
+      <p>Conditions of Use & Sale</p>
+      <p>Privacy Notice</p>
+      <p>Interest-Based Ads</p>
+      <br />
+      <p style={{textDecoration: "none"}}>&copy; 2022-2024, SmartPick.com, Inc. or its affiliates</p>
     </div>
   </div>
   )

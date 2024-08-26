@@ -13,18 +13,21 @@
 	padding: 1% 0;
 	/* border: 2px solid black; */
 	/* padding: 100px; */
+	background-color: white;
 }
 .inner h1{
 	color: black;
 }
 .outer{
 	margin-top: 20px;
+	/* background-color: white; */
 }
 h2{
 	color: black;
 }
 .main-class{
 	overflow: hidden;
+	background-color:rgb(224, 239, 239);
 }
 .product_nav{
 	padding: 10px 6%;

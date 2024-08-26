@@ -19,7 +19,7 @@ function Mobile_Props(props) {
 			<p><b>Front Camera</b> : {Front_camera}</p>
 			<p><b>Weight</b> : {Weight}</p>
 			<p><b>Battery</b> : {Battery_life}</p>
-			<p><b>Price : </b>&nbsp;₹{Price}</p>
+			<p style={{color: "green"}}><b style={{color: "black"}}>Price : </b>&nbsp;<b>₹{Price}</b></p>
 		</div>
 	</>
   )

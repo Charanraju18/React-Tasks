@@ -19,7 +19,7 @@ function Laptop_props(props) {
 			<p><b>Display</b> : {Display}</p>
 			<p><b>Size</b> : {Size}</p>
 			<p><b>Weight</b> : {Weight}</p>
-			<p><b>Price : </b>&nbsp;₹{Price}</p>
+			<p style={{color: "green"}}><b style={{color: "black"}}>Price : </b>&nbsp;<b>₹{Price}</b></p>
 		</div>
 	</>
   )
