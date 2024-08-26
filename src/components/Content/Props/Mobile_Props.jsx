@@ -2,7 +2,7 @@ import React from 'react'
 import '../Content'
 import './Props.css'
 function Mobile_Props(props) {
-	const {Product,Image,Display,CPU,RAM,Storage,camera,Front_camera,Weight,Battery_life} = props.product_data
+	const {Product,Image,Display,CPU,RAM,Storage,camera,Front_camera,Weight,Battery_life,Price} = props.product_data
 
   return (
 	<>
@@ -19,6 +19,7 @@ function Mobile_Props(props) {
 			<p><b>Front Camera</b> : {Front_camera}</p>
 			<p><b>Weight</b> : {Weight}</p>
 			<p><b>Battery</b> : {Battery_life}</p>
+			<p><b>Price : </b>&nbsp;₹{Price}</p>
 		</div>
 	</>
   )

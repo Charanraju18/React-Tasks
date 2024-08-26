@@ -39,7 +39,7 @@ h2{
 	/* background-color: black; */
 	border: 2px solid black;
 	border-radius: 15px;
-	padding: 0 15px;
+	padding: 6px 15px;
 	background-color: black;
 	color: white;
 }
@@ -56,4 +56,17 @@ h2{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+}
+.right_part{
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+.sort_btn{
+	padding: 5px 15px;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	opacity: .9;
+	cursor: pointer;
 }

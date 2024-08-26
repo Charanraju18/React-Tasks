@@ -54,9 +54,26 @@ function SamplePrevArrow(props) {
 
 function Content() {
 
+
+
+
+
+
   // {
 
     const [data, setdata] = useState(Mobiles_data)
+
+    const mSortByPrice = () =>{
+        const dummy_mobile_data = [...data]
+        dummy_mobile_data.sort((n1,n2)=>[n1.Price-n2.Price])
+        setdata(dummy_mobile_data)
+    }
+
+    const mSortByPerformance = () =>{
+      const dummy_mobile_data = [...data]
+      dummy_mobile_data.sort((n1,n2)=>[n1.ProductId-n2.ProductId])
+      setdata(dummy_mobile_data)
+    }
 
     const [searcheddata, setsearcheddata] = useState('')
     const searchedParameter = (e)=>{
@@ -66,7 +83,11 @@ function Content() {
 
     const userSearch = searcheddata.toLowerCase();
 
-    const search = data.filter((item)=>(item.Product).toLowerCase().includes(userSearch));
+    const search = data.filter((item)=>{
+        const productName = (item.Product).toLowerCase().includes(userSearch);
+        const brandName = (item.Brand).toLowerCase().includes(userSearch);
+        return productName || brandName
+    })
 
     const displayData = searcheddata ? search : data;
 
@@ -76,6 +97,18 @@ function Content() {
 
   const [lpdata, setlpdata] = useState(Laptop_data)
 
+  const lpSortByPrice = () =>{
+    const dummy_laptop_data = [...lpdata]
+    dummy_laptop_data.sort((n1,n2)=>[n1.Price-n2.Price])
+    setlpdata(dummy_laptop_data)
+}
+
+const lpSortByPerformance = () =>{
+  const dummy_laptop_data = [...lpdata]
+  dummy_laptop_data.sort((n1,n2)=>[n2.Geekbench-n1.Geekbench])
+  setlpdata(dummy_laptop_data)
+}
+
   const [lpsearcheddata, setlpsearcheddata] = useState('')
   const lpsearchedParameter = (e)=>{
     const lpsearchValue = e.target.value;
@@ -84,7 +117,11 @@ function Content() {
 
   const lpuserSearch = lpsearcheddata.toLowerCase();
 
-  const lpsearch = lpdata.filter((item)=>(item.Product).toLowerCase().includes(lpuserSearch));
+  const lpsearch = lpdata.filter((item)=>{
+    const productName = (item.Product).toLowerCase().includes(lpuserSearch);
+    const brandName = (item.Brand).toLowerCase().includes(lpuserSearch);
+    return productName || brandName
+  })
 
   const lpdisplayData = lpsearcheddata ? lpsearch : lpdata;
 
@@ -155,9 +192,14 @@ function Content() {
           <div>
           <h2>MOBILES</h2>
           </div>
+          <div className='right_part'>
+            <h4 style={{display : "inline-block"}}>Sort By :</h4>
+            <button onClick={mSortByPerformance} className='sort_btn'>Performace</button>
+            <button onClick={mSortByPrice} className='sort_btn'>Price</button>
           <div className="search_div">
             <input type='text' placeholder='Search Product' onChange={(e)=>searchedParameter(e)}/>
             <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#ffffff",}} className='search_icon' color='black'/>
+          </div>
           </div>
         </div>
         <div className='props_outer_div'>
@@ -177,10 +219,15 @@ function Content() {
           <div>
           <h2>LAPTOPS</h2>
           </div>
-          <div className="search_div">
-            <input type='text' placeholder='Search Product' onChange={(e)=>lpsearchedParameter(e)}/>
-            <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#ffffff",}} className='search_icon' color='black'/>
-          </div>
+          <div className='right_part'>
+            <h4 style={{display : "inline-block"}}>Sort By :</h4>
+            <button onClick={lpSortByPerformance} className='sort_btn'>GeekBench Score</button>
+            <button onClick={lpSortByPrice} className='sort_btn'>Price</button>
+            <div className="search_div">
+              <input type='text' placeholder='Search Product' onChange={(e)=>lpsearchedParameter(e)}/>
+              <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#ffffff",}} className='search_icon' color='black'/>
+            </div>
+            </div>
         </div>
         <div className='props_outer_div'>
           {
@@ -207,7 +254,7 @@ function Content() {
         </div>
 
       </div> */}
-       
+
     </div>
 
     </>

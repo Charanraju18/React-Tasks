@@ -1,6 +1,7 @@
 export const Mobiles_data = [
 	{
-		ProductId : "001",
+		"ProductId" : 1,
+		Brand : "Apple",
 		Product : "iPhone 15 Pro Max",
 		Image : "https://assets.sangeethamobiles.com/product_img/14521/1694715522_sRX.jpg",
 		Display: "6.7-inch OLED (2796x1290; 1-120Hz)",
@@ -10,23 +11,12 @@ export const Mobiles_data = [
 		camera: "48MP wide (f/1.78), 12MP ultra wide (ƒ/2.2), 12MP telephoto (5x zoom; f/2.8)",
 		Front_camera: "12MP (ƒ/1.9)",
 		Weight: "221 grams",
-		Battery_life : "(Hrs:Mins): 14:02"
+		Battery_life : "(Hrs:Mins): 14:02",
+		"Price": 144000
 	},
 	{
-		ProductId : "002",
-		Product : "Samsung Galaxy S24 Ultra",
-		Image : "https://assets.sangeethamobiles.com/product_img/15730/1718956119_rYF.jpg",
-		Display: "6.8-inch OLED (3120 x 1440; 1-120Hz)",
-		CPU: "Snapdragon 8 Gen 3",
-		RAM: "12GB",
-		Storage : "256GB, 512GB, 1TB",
-		camera : "200MP main (f/1.7), 12MP ultra wide (ƒ/2.2), 50MP telephoto (5x zoom; f/3.4), 10MP telephoto (3x zoom)",
-		Front_camera : "12MP (ƒ/2.2)",
-		Weight: "8.2 oz",
-		Battery_life: "(Hrs:Mins): 16:45"
-	},
-	{
-		ProductId : "003",
+		"ProductId" : 3,
+		Brand : "Pixel",
 		Product : "Pixel 9 Pro",
 		Image : "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS9d0tKpqLPydhSD_nFOG4clbaY0Ttv4BfHQaszyi8FUZl-kJKSgLG_XFkxILQqKmSebkD1z6ubOL75aDDQ7--qzYhfkZJgvMzgLCG2XokyxPfJlankyN0jKw",
 		Display: "6.3-inch OLED (2856x1280; 1-120Hz)",
@@ -36,23 +26,12 @@ export const Mobiles_data = [
 		camera: "50MP wide (ƒ/1.68), 48MP ultra wide (ƒ/1.7), 48MP telephoto (5x zoom; ƒ/2.8)",
 		Front_camera: "42MP (ƒ/2.2)",
 		Weight: "7 oz",
-		Battery_life : "(Hrs:Mins) 13:37"
+		Battery_life : "(Hrs:Mins) 13:37",
+		"Price": 109999
 	},
 	{
-		ProductId : "004",
-		Product : "Pixel 8a",
-		Image : "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRDeUb6mAjKhcEewkoBjHEoChuI2m22y03PpZ91nihuBe9c35uJAUj3MD4U43dcZpNXyeAYTakq5sjq2DhhRbl_jkyGmQa9",
-		Display: "6.1-inch OLED (2400 x 1080; 120Hz)",
-		CPU: "Tensor G3",
-		RAM: "8GB",
-		Storage: "128GB, 256GB",
-		camera: "64MP wide (f/1.89), 13MP ultrawide (f/2.2)",
-		Front_camera: "13MP (f/2.2)",
-		Weight: "6.8 ounces",
-		Battery_life : "(Hrs:Mins): 11:21"
-	},
-	{
-		ProductId : "005",
+		"ProductId" : 5,
+		Brand : "Apple",
 		Product : "iPhone 15",
 		Image : "https://assets.sangeethamobiles.com/product_img/14507/1694714687_bw9.jpg",
 		Display: "6.1-inch OLED (2556x1179; 60Hz)",
@@ -62,23 +41,12 @@ export const Mobiles_data = [
 		camera: "48MP wide (f/1.6) w/ 2x zoom, 12MP ultra wide (ƒ/2.4)",
 		Front_camera: "12MP (ƒ/1.9)",
 		Weight: "6 oz",
-		Battery_life : "(Hrs:Mins) : 11:05"
+		Battery_life : "(Hrs:Mins) : 11:05",
+		"Price": 69999
 	},
 	{
-		ProductId : "006",
-		Product : "Samsung Galaxy S24",
-		Image : "https://assets.sangeethamobiles.com/product_img/15676/1706081113_Llr.jpg",
-		Display: "6.2-inch OLED (2340x1080; 1-120Hz)",
-		CPU: "Snapdragon 8 Gen 3 / Exynos 2400",
-		RAM: "8GB",
-		Storage : "128GB, 256GB",
-		camera: "50MP wide (f/1.8), 12MP ultra wide (ƒ/2.2), 10MP telephoto (3x zoom; f/2.4)",
-		Front_camera: "12MP (ƒ/2.2)",
-		Weight: "5.9 oz",
-		Battery_life : "(Hrs:Mins) : 13:28"
-	},
-	{
-		ProductId : "007",
+		"ProductId" : 7,
+		Brand : "OnePlus",
 		Product : "OnePlus 12",
 		Image : "https://d2xamzlzrdbdbn.cloudfront.net/products/f7749220-d062-47e4-aa6b-c8c517f8360424231603.jpg",
 		Display: "6.82-inch OLED (3168x1440; 1-120Hz)",
@@ -88,23 +56,12 @@ export const Mobiles_data = [
 		camera: "50MP main (f/1.6), 48MP ultra wide (ƒ/2.2), 64MP telephoto (3x zoom; f/2.6)",
 		Front_camera: "32MP (ƒ/2.4)",
 		Weight: "7.8 oz",
-		Battery_life : "(Hrs:Mins) : 17:41"
+		Battery_life : "(Hrs:Mins) : 17:41",
+		"Price": 58999
 	},
 	{
-		ProductId : "008",
-		Product : "iPhone 15 Pro",
-		Image : "https://assets.sangeethamobiles.com/product_img/14515/1694715553_jyN.jpg",
-		Display: "6.1-inch OLED (2556x1179; 120Hz)",
-		CPU: "A17 Pro",
-		RAM: "8GB",
-		Storage: "128GB, 256GB, 512GB, 1TB",
-		camera: "48MP wide (f/1.8) w/ 2x zoom, 12MP ultra wide (ƒ/2.2), 12MP 3x telephoto (f/2.8)",
-		Front_camera: "12MP (ƒ/1.9)",
-		Weight: "6.6 oz",
-		Battery_life : "(Hrs:Mins) : 10:53"
-	},
-	{
-		ProductId : "009",
+		"ProductId" : 9,
+		Brand : "Pixel",
 		Product : "Pixel 9",
 		Image : "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/r/r/w/pixel-9-ga05842-in-google-original-imah3pfhxtjf5t8q.jpeg?q=70&crop=false",
 		Display: "6.3-inch OLED (2424x1080; 60-120Hz)",
@@ -114,10 +71,72 @@ export const Mobiles_data = [
 		camera: "50MP wide (ƒ/1.68), 48MP ultrawide (ƒ/1.7)",
 		Front_camera: "10.5MP (ƒ/2.0)",
 		Weight: "7 oz.",
-		Battery_life : "(Hrs:Mins) : 13:18"
+		Battery_life : "(Hrs:Mins) : 13:18",
+		"Price": 79999
 	},
 	{
-		ProductId : "010",
+		"ProductId" : 2,
+		Brand : "Samsung",
+		Product : "Samsung Galaxy S24 Ultra",
+		Image : "https://assets.sangeethamobiles.com/product_img/15730/1718956119_rYF.jpg",
+		Display: "6.8-inch OLED (3120 x 1440; 1-120Hz)",
+		CPU: "Snapdragon 8 Gen 3",
+		RAM: "12GB",
+		Storage : "256GB, 512GB, 1TB",
+		camera : "200MP main (f/1.7), 12MP ultra wide (ƒ/2.2), 50MP telephoto (5x zoom; f/3.4), 10MP telephoto (3x zoom)",
+		Front_camera : "12MP (ƒ/2.2)",
+		Weight: "8.2 oz",
+		Battery_life: "(Hrs:Mins): 16:45",
+		"Price": 109389
+	},
+	{
+		"ProductId" : 4,
+		Brand : "Pixel",
+		Product : "Pixel 8a",
+		Image : "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRDeUb6mAjKhcEewkoBjHEoChuI2m22y03PpZ91nihuBe9c35uJAUj3MD4U43dcZpNXyeAYTakq5sjq2DhhRbl_jkyGmQa9",
+		Display: "6.1-inch OLED (2400 x 1080; 120Hz)",
+		CPU: "Tensor G3",
+		RAM: "8GB",
+		Storage: "128GB, 256GB",
+		camera: "64MP wide (f/1.89), 13MP ultrawide (f/2.2)",
+		Front_camera: "13MP (f/2.2)",
+		Weight: "6.8 ounces",
+		Battery_life : "(Hrs:Mins): 11:21",
+		"Price": 42999
+	},
+	{
+		"ProductId" : 6,
+		Brand : "Samsung",
+		Product : "Samsung Galaxy S24",
+		Image : "https://assets.sangeethamobiles.com/product_img/15676/1706081113_Llr.jpg",
+		Display: "6.2-inch OLED (2340x1080; 1-120Hz)",
+		CPU: "Snapdragon 8 Gen 3 / Exynos 2400",
+		RAM: "8GB",
+		Storage : "128GB, 256GB",
+		camera: "50MP wide (f/1.8), 12MP ultra wide (ƒ/2.2), 10MP telephoto (3x zoom; f/2.4)",
+		Front_camera: "12MP (ƒ/2.2)",
+		Weight: "5.9 oz",
+		Battery_life : "(Hrs:Mins) : 13:28",
+		"Price": 60999
+	},
+	{
+		"ProductId" : 8,
+		Brand : "Apple",
+		Product : "iPhone 15 Pro",
+		Image : "https://assets.sangeethamobiles.com/product_img/14515/1694715553_jyN.jpg",
+		Display: "6.1-inch OLED (2556x1179; 120Hz)",
+		CPU: "A17 Pro",
+		RAM: "8GB",
+		Storage: "128GB, 256GB, 512GB, 1TB",
+		camera: "48MP wide (f/1.8) w/ 2x zoom, 12MP ultra wide (ƒ/2.2), 12MP 3x telephoto (f/2.8)",
+		Front_camera: "12MP (ƒ/1.9)",
+		Weight: "6.6 oz",
+		Battery_life : "(Hrs:Mins) : 10:53",
+		"Price": 119890
+	},
+	{
+		"ProductId" : 10,
+		Brand : "OnePlus",
 		Product : "Oneplus 12R",
 		Image : "https://d2xamzlzrdbdbn.cloudfront.net/products/4f4b98b3-247e-4880-a76b-17ba102ef1fe24211304_416x416.jpg",
 		Display: "6.78-inch OLED (2780x1264; 120Hz)",
@@ -127,6 +146,7 @@ export const Mobiles_data = [
 		camera: "50MP main (f/1.8), 8MP ultra wide (ƒ/2.2), 2MP macro (f/2.4)",
 		Front_camera: "16MP (ƒ/2.4)",
 		Weight: "7.4 oz",
-		Battery_life : "(Hrs:Mins) : 18:42"
+		Battery_life : "(Hrs:Mins) : 18:42",
+		"Price": 39999
 	}
 ]

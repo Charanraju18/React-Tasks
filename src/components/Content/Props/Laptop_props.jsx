@@ -2,7 +2,7 @@ import React from 'react'
 import '../Content'
 import './Props.css'
 function Laptop_props(props) {
-	const {Product,Image,CPU,GPU,RAM,Storage,Display,Size,Weight} = props.product_data
+	const {Product,Image,CPU,GPU,RAM,Storage,Display,Size,Weight,Price,Geekbench} = props.product_data
 
   return (
 	<>
@@ -11,6 +11,7 @@ function Laptop_props(props) {
 			<div className='product_image_div'>
 				<img src={Image} height={200} style={{margin: 'auto'}}/>
 			</div>
+			<p><b>GeekBench Score </b>: {Geekbench}</p>
 			<p><b>CPU</b> : {CPU}</p>
 			<p><b>GPU</b> : {GPU}</p>
 			<p><b>RAM</b> : {RAM}</p>
@@ -18,6 +19,7 @@ function Laptop_props(props) {
 			<p><b>Display</b> : {Display}</p>
 			<p><b>Size</b> : {Size}</p>
 			<p><b>Weight</b> : {Weight}</p>
+			<p><b>Price : </b>&nbsp;₹{Price}</p>
 		</div>
 	</>
   )
