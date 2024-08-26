@@ -11,7 +11,7 @@ function Laptop_props(props) {
 			<div className='product_image_div'>
 				<img src={Image} height={200} style={{margin: 'auto'}}/>
 			</div>
-			<p><b>GeekBench Score </b>: {Geekbench}</p>
+			<p ><b>GeekBench Score </b>: <span style={{color: 'blue'}}><b>{Geekbench}</b></span></p>
 			<p><b>CPU</b> : {CPU}</p>
 			<p><b>GPU</b> : {GPU}</p>
 			<p><b>RAM</b> : {RAM}</p>
