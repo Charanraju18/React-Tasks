@@ -3,3 +3,37 @@
 	width: 100%;
 	height: 30svh;
 }
+.footer .social_media_icons{
+	margin: 20px 40px;
+	font-size: 24px;
+	cursor: pointer;
+}
+hr{
+	width: 50%;
+	margin: auto;
+}
+
+.icons{
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+}
+.footer_logo{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.footer_logo img{
+	margin-top: 20px;
+	border-radius: 50%;
+}
+.logo_hr{
+	width: 30%;
+}
+.hr1{
+	border-color: #18D2CC;
+}
+.hr2{
+	border-color: #4974CC;
+}
