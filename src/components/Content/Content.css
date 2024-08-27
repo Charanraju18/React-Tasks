@@ -18,9 +18,18 @@
 .inner h1{
 	color: black;
 }
+.slick-prev:before, .slick-next:before {
+    color: #333;
+	z-index: 3;
+  }
+
+  .slick-prev:hover:before, .slick-next:hover:before {
+    color: black;
+	z-index: 3;
+  }
 .outer{
 	margin-top: 20px;
-	/* background-color: white; */
+	/* background-color: black; */
 }
 h2{
 	color: black;

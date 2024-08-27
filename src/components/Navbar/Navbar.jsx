@@ -1,12 +1,12 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart,faUser,faBars} from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
+	const [first, setfirst] = useState(true)
 	const menu_clicked = () =>{
-		const x = document.getElementsByClassName('sidebar-menu');
-		x.style = "display : block";
+		setfirst(!first)
 	}
   return (
 	<div>
@@ -26,7 +26,7 @@ function Navbar() {
 				<FontAwesomeIcon icon={faUser} style={{color: "#ffffff",}} className='user-icon'/>
 				<FontAwesomeIcon icon={faBars} style={{color: "#ffffff",}} className='menu-bars' onClick={menu_clicked}/>
 			</div>
-			<div className="sidebar-menu">
+			<div className={`${{first} ? "sidebar-menu" : "hidesidebar"}`}>
 				<ul>
 					<li>Home</li>
 					<li>Mobiles</li>

@@ -34,11 +34,11 @@
 	position: absolute;
 	right: 0;
 	top: 100%;
-	background-color: black;
+	background-color: gray;
 	height: 100svh;
 	width: fit-content;
 	padding: 10px 4%;
-	z-index: -1;
+	z-index: 10;
 	display: none;
 }
 .sidebar-menu ul{
@@ -47,6 +47,9 @@
 .sidebar-menu ul li{
 	margin: 25px 0;
 	cursor: pointer;
+}
+.hidesidebar{
+	display: none;
 }
 @media screen and (max-width: 900px){
 	.navbar-left ul li{

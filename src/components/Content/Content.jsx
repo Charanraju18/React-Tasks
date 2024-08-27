@@ -30,36 +30,10 @@ import Laptop_props from './Props/Laptop_props'
 
 
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "black" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "black" }}
-      onClick={onClick}
-    />
-  );
-}
-
 function Content() {
 
-
-
-
-
-
   // {
+    // search implementation of mobiles
 
     const [data, setdata] = useState(Mobiles_data)
 
@@ -94,6 +68,7 @@ function Content() {
   // }
 
   // {
+    // search implementation of laptops
 
   const [lpdata, setlpdata] = useState(Laptop_data)
 
@@ -129,14 +104,12 @@ const lpSortByPerformance = () =>{
 
   const settings = {
     dots: true,
-    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    speed: 1000,
+    autoplay: true,
+    infinite: true,
+    speed: 8000,
     cssEase: "linear",
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
   };
   return (
     <>
