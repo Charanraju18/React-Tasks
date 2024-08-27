@@ -104,6 +104,7 @@ const lpSortByPerformance = () =>{
 
   const settings = {
     dots: true,
+    arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
