@@ -39,18 +39,26 @@
 	width: fit-content;
 	padding: 10px 4%;
 	z-index: 10;
-	display: none;
+	transition: all .4s linear;
+	/* display: none; */
 }
-.sidebar-menu ul{
+.sidebar-menu ul,
+.hidesidebar ul{
 	list-style: none;
 }
-.sidebar-menu ul li{
+.sidebar-menu ul li,
+.hidesidebar ul li{
 	margin: 25px 0;
 	cursor: pointer;
 }
 .hidesidebar{
+	position: absolute;
+	left: 100%;
+	transition: all .5s linear;
+	top: 100%;
 	display: none;
 }
+
 @media screen and (max-width: 900px){
 	.navbar-left ul li{
 		display: none;

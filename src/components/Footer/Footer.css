@@ -1,7 +1,8 @@
 .footer{
 	background-color: black;
 	width: 100%;
-	height: 40svh;
+	height: 45svh;
+	padding-top: 10px;
 }
 .footer .social_media_icons{
 	margin: 20px 40px;
