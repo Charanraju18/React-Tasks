@@ -109,7 +109,7 @@ const lpSortByPerformance = () =>{
     slidesToScroll: 1,
     autoplay: true,
     infinite: true,
-    speed: 8000,
+    speed: 2000,
     cssEase: "linear",
   };
   return (
