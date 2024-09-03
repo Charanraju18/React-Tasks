@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 900px){
 	.navbar-left ul li{
-		display: none;
+		display: block;
 	}
 	.navbar-right .menu-bars{
 		display: block;

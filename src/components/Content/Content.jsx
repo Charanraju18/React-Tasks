@@ -31,7 +31,7 @@ import Laptop_props from './Props/Laptop_props'
 
 
 function Content() {
-
+  /*console.log(11+31);*/
   // {
     // search implementation of mobiles
 
