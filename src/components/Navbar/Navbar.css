@@ -64,7 +64,7 @@
 		display: block;
 	}
 	.navbar-right .menu-bars{
-		display: none;
+		display: block;
 	}
 }
 .navbar-right{
