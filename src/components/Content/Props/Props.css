@@ -19,5 +19,19 @@
 	height: fit-content;
 	display: flex;
 	justify-content: center;
+	position: relative;
 }
 
+.fav{
+	position: absolute;
+	font-size: 28px;
+	right: 30px;
+	cursor: pointer;
+}
+.cart{
+	position: absolute;
+	font-size: 28px;
+	right: 30px;
+	top: 50px;
+	cursor: pointer;
+}

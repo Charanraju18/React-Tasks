@@ -1,6 +1,9 @@
 import React from 'react'
 import '../Content'
 import './Props.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart, faCartShopping} from '@fortawesome/free-solid-svg-icons'
+
 function Laptop_props(props) {
 	const {Product,Image,CPU,GPU,RAM,Storage,Display,Size,Weight,Price,Geekbench} = props.product_data
 
@@ -10,6 +13,8 @@ function Laptop_props(props) {
 			<h3>{Product}</h3>
 			<div className='product_image_div'>
 				<img src={Image} height={200} style={{margin: 'auto'}}/>
+				<FontAwesomeIcon icon={faHeart} style={{color: "grey"}} className='fav'/>
+				<FontAwesomeIcon icon={faCartShopping} style={{color: "grey"}} className='cart'/>
 			</div>
 			<p ><b>GeekBench Score </b>: <span style={{color: 'blue'}}><b>{Geekbench}</b></span></p>
 			<p><b>CPU</b> : {CPU}</p>

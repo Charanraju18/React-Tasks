@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF,faInstagram,faYoutube,faXTwitter,faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import logo from '../../../public/logo.png'
+import logo from '/logo.png'
 function Footer() {
   return (
 	<div className='footer'>

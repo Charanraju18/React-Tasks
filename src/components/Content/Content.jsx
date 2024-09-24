@@ -31,9 +31,6 @@ import Laptop_props from './Props/Laptop_props'
 
 
 function Content() {
-  /*console.log(11+31);*/
-  // {
-    // search implementation of mobiles
 
     const [data, setdata] = useState(Mobiles_data)
 
@@ -65,11 +62,6 @@ function Content() {
 
     const displayData = searcheddata ? search : data;
 
-  // }
-
-  // {
-    // search implementation of laptops
-
   const [lpdata, setlpdata] = useState(Laptop_data)
 
   const lpSortByPrice = () =>{
@@ -99,8 +91,6 @@ const lpSortByPerformance = () =>{
   })
 
   const lpdisplayData = lpsearcheddata ? lpsearch : lpdata;
-
-  // }
 
   const settings = {
     dots: true,
@@ -188,6 +178,7 @@ const lpSortByPerformance = () =>{
           }
         </div>
       </div>
+      
       <div className="laptop_division">
         <div className='product_nav'>
           <div>
