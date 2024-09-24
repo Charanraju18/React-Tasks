@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart,faUser,faBars} from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
 	const [first, setfirst] = useState(false)
@@ -22,7 +23,7 @@ function Navbar() {
           </ul>
         </div>
         <div className="navbar-right">
-          <FontAwesomeIcon icon={faHeart} className="fav-icon" />
+          <Link to='/user_favourites'><FontAwesomeIcon icon={faHeart} className="fav-icon" /></Link>
           <FontAwesomeIcon
             icon={faUser}
             style={{ color: "#ffffff" }}
