@@ -8,9 +8,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/React-Tasks' element={<Home/>}/>
-          <Route path="/user_favourites" element={<Favourite />}/>
-          <Route path="/user_cart" element={<Cart />}/>
+          <Route path='/React-Tasks/' element={<Home/>}/>
+          <Route path="/user_favourites/" element={<Favourite />}/>
+          <Route path="/user_cart/" element={<Cart />}/>
 
         </Routes>
       </BrowserRouter>

@@ -13,9 +13,11 @@ function Navbar() {
     <div>
       <div className="navbar">
         <div className="navbar-left">
-          <p className="project-Title">SMARTPICK</p>
+        <Link to='/React-Tasks/' style={{textDecoration: 'none'}}><p className="project-Title" style={{color:'white'}}>SMARTPICK</p></Link>
+
+          {/* <p className="project-Title">SMARTPICK</p> */}
           <ul>
-            <li>Home</li>
+            <Link to='/React-Tasks/' style={{textDecoration: 'none', color: 'white'}}><li>Home</li></Link>
             <li>Mobiles</li>
             <li>Laptops</li>
             <li>TV's</li>
@@ -23,7 +25,7 @@ function Navbar() {
           </ul>
         </div>
         <div className="navbar-right">
-          <Link to='/user_favourites'>
+          <Link to='/user_favourites/'>
             <FontAwesomeIcon icon={faHeart} style={{color: "#fffff"}} className="fav-icon" />
           </Link>
           <Link to='/user_cart'>

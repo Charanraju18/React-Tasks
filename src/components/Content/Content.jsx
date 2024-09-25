@@ -62,6 +62,9 @@ function Content() {
 
     const displayData = searcheddata ? search : data;
 
+
+
+    
   const [lpdata, setlpdata] = useState(Laptop_data)
 
   const lpSortByPrice = () =>{
@@ -102,112 +105,142 @@ const lpSortByPerformance = () =>{
     speed: 2000,
     cssEase: "linear",
   };
+
+  const addFavorit = (id) => {
+    console.log(id);
+    const updatedData = data.map((item) => {
+      return item.ProductId === id ? { ...item, Fav: !item.Fav } : item;
+    });
+    setdata(updatedData);
+  };
   return (
     <>
-    <div className='main-class'>
-      <Slider {...settings}>
-        <div className='outer'>
-          <div className='inner'>
-            <img src={img2} height='100%'/>
-            <img src={img1} height='100%'/>
-            <img src={img3} height='100%'/>
-          </div>
-        </div>
-        <div className='outer'>
-          <div className='inner'>
-            <img src={img4} height='100%'/>
-            <img src={img5} height='100%'/>
-            <img src={img6} height='100%'/>
-          </div>
-        </div>
-        <div className='outer'>
-          <div className='inner'>
-            <img src={img7} height='100%'/>
-            <img src={img8} height='100%'/>
-            <img src={img9} height='100%'/>
-          </div>
-        </div>
-        <div className='outer'>
-          <div className='inner'>
-            <img src={img10} height='100%'/>
-            <img src={img11} height='100%'/>
-            <img src={img12} height='100%'/>
-          </div>
-        </div>
-        <div className='outer'>
-          <div className='inner'>
-            <img src={img13} height='100%'/>
-            <img src={img14} height='100%'/>
-            <img src={img15} height='100%'/>
-          </div>
-        </div>
-        <div className='outer'>
-          <div className='inner'>
-            <img src={img16} height='100%'/>
-            <img src={img17} height='100%'/>
-            <img src={img18} height='100%'/>
-          </div>
-        </div>
-      </Slider>
-      <br />
-      <br />
-      <div className='mobile_division'>
-        <div className='product_nav'>
-          <div>
-          <h2>MOBILES</h2>
-          </div>
-          <div className='right_part'>
-            <h4 style={{display : "inline-block"}}>Sort By :</h4>
-            <button onClick={mSortByPerformance} className='sort_btn'>Performace</button>
-            <button onClick={mSortByPrice} className='sort_btn'>Price</button>
-          <div className="search_div">
-            <input type='text' placeholder='Search Product' onChange={(e)=>searchedParameter(e)}/>
-            <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#ffffff",}} className='search_icon' color='black'/>
-          </div>
-          </div>
-        </div>
-        <div className='props_outer_div'>
-          {
-            displayData.map((product,ind)=>{
-              return(
-                <>
-                    <Mobile_Props product_data={product}/>
-                </>
-              )
-            })
-          }
-        </div>
-      </div>
-      
-      <div className="laptop_division">
-        <div className='product_nav'>
-          <div>
-          <h2>LAPTOPS</h2>
-          </div>
-          <div className='right_part'>
-            <h4 style={{display : "inline-block"}}>Sort By :</h4>
-            <button onClick={lpSortByPerformance} className='sort_btn'>GeekBench Score</button>
-            <button onClick={lpSortByPrice} className='sort_btn'>Price</button>
-            <div className="search_div">
-              <input type='text' placeholder='Search Product' onChange={(e)=>lpsearchedParameter(e)}/>
-              <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#ffffff",}} className='search_icon' color='black'/>
+      <div className="main-class">
+        <Slider {...settings}>
+          <div className="outer">
+            <div className="inner">
+              <img src={img2} height="100%" />
+              <img src={img1} height="100%" />
+              <img src={img3} height="100%" />
             </div>
+          </div>
+          <div className="outer">
+            <div className="inner">
+              <img src={img4} height="100%" />
+              <img src={img5} height="100%" />
+              <img src={img6} height="100%" />
             </div>
-        </div>
-        <div className='props_outer_div'>
-          {
-            lpdisplayData.map((product,ind)=>{
-              return(
+          </div>
+          <div className="outer">
+            <div className="inner">
+              <img src={img7} height="100%" />
+              <img src={img8} height="100%" />
+              <img src={img9} height="100%" />
+            </div>
+          </div>
+          <div className="outer">
+            <div className="inner">
+              <img src={img10} height="100%" />
+              <img src={img11} height="100%" />
+              <img src={img12} height="100%" />
+            </div>
+          </div>
+          <div className="outer">
+            <div className="inner">
+              <img src={img13} height="100%" />
+              <img src={img14} height="100%" />
+              <img src={img15} height="100%" />
+            </div>
+          </div>
+          <div className="outer">
+            <div className="inner">
+              <img src={img16} height="100%" />
+              <img src={img17} height="100%" />
+              <img src={img18} height="100%" />
+            </div>
+          </div>
+        </Slider>
+        <br />
+        <br />
+        <div className="mobile_division">
+          <div className="product_nav">
+            <div>
+              <h2>MOBILES</h2>
+            </div>
+            <div className="right_part">
+              <h4 style={{ display: "inline-block" }}>Sort By :</h4>
+              <button onClick={mSortByPerformance} className="sort_btn">
+                Performace
+              </button>
+              <button onClick={mSortByPrice} className="sort_btn">
+                Price
+              </button>
+              <div className="search_div">
+                <input
+                  type="text"
+                  placeholder="Search Product"
+                  onChange={(e) => searchedParameter(e)}
+                />
+                <FontAwesomeIcon
+                  icon={faMagnifyingGlass}
+                  style={{ color: "#ffffff" }}
+                  className="search_icon"
+                  color="black"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="props_outer_div">
+            {displayData.map((product, ind) => {
+              return (
                 <>
-                    <Laptop_props product_data={product}/>
+                  <Mobile_Props product_data={product} addFave={addFavorit} />
                 </>
-              )
-            })
-          }
+              );
+            })}
+          </div>
         </div>
-      </div>
 
-      {/* <div className="tv_division">
+        <div className="laptop_division">
+          <div className="product_nav">
+            <div>
+              <h2>LAPTOPS</h2>
+            </div>
+            <div className="right_part">
+              <h4 style={{ display: "inline-block" }}>Sort By :</h4>
+              <button onClick={lpSortByPerformance} className="sort_btn">
+                GeekBench Score
+              </button>
+              <button onClick={lpSortByPrice} className="sort_btn">
+                Price
+              </button>
+              <div className="search_div">
+                <input
+                  type="text"
+                  placeholder="Search Product"
+                  onChange={(e) => lpsearchedParameter(e)}
+                />
+                <FontAwesomeIcon
+                  icon={faMagnifyingGlass}
+                  style={{ color: "#ffffff" }}
+                  className="search_icon"
+                  color="black"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="props_outer_div">
+            {lpdisplayData.map((product, ind) => {
+              return (
+                <>
+                  <Laptop_props product_data={product} />
+                </>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* <div className="tv_division">
         <div className='product_nav'>
           <div>
           <h2>TV's</h2>
@@ -219,11 +252,9 @@ const lpSortByPerformance = () =>{
         </div>
 
       </div> */}
-
-    </div>
-
+      </div>
     </>
-  )
+  );
 }
 
 export default Content
