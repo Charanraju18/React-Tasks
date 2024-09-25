@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Content'
 import './Props.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faCartShopping} from '@fortawesome/free-solid-svg-icons'
 function Mobile_Props(props) {
-	const {Product,Image,Display,CPU,RAM,Storage,camera,Front_camera,Weight,Battery_life,Price} = props.product_data
+	var {Product,Image,Display,CPU,RAM,Storage,camera,Front_camera,Weight,Battery_life,Price,Fav} = props.product_data
+
+	const [fav, setfav] = useState(false)
+	const userFavourite = () => {
+		Fav = !Fav
+		console.log(Fav)
+	}
 
   return (
 	<>
@@ -12,7 +18,7 @@ function Mobile_Props(props) {
 			<h3>{Product}</h3>
 			<div className='product_image_div'>
 				<img src={Image} height={200} style={{margin: 'auto'}}/>
-				<FontAwesomeIcon icon={faHeart} style={{color: "grey"}} className='fav'/>
+				<FontAwesomeIcon icon={faHeart} style={{color: "grey"}} className='fav' onClick={userFavourite}/>
 				<FontAwesomeIcon icon={faCartShopping} style={{color: "grey"}} className='cart'/>
 			</div>
 			<p><b>Display</b> : {Display}</p>

@@ -12,7 +12,8 @@ export const Mobiles_data = [
 		Front_camera: "12MP (ƒ/1.9)",
 		Weight: "221 grams",
 		Battery_life : "(Hrs:Mins): 14:02",
-		"Price": 144000
+		"Price": 144000,
+		"Fav" : false
 	},
 	{
 		"ProductId" : 3,
@@ -27,7 +28,8 @@ export const Mobiles_data = [
 		Front_camera: "42MP (ƒ/2.2)",
 		Weight: "7 oz",
 		Battery_life : "(Hrs:Mins) 13:37",
-		"Price": 109999
+		"Price": 109999,
+		"Fav" : false
 	},
 	{
 		"ProductId" : 5,
@@ -42,7 +44,8 @@ export const Mobiles_data = [
 		Front_camera: "12MP (ƒ/1.9)",
 		Weight: "6 oz",
 		Battery_life : "(Hrs:Mins) : 11:05",
-		"Price": 69999
+		"Price": 69999,
+		"Fav" : false
 	},
 	{
 		"ProductId" : 7,
@@ -57,7 +60,8 @@ export const Mobiles_data = [
 		Front_camera: "32MP (ƒ/2.4)",
 		Weight: "7.8 oz",
 		Battery_life : "(Hrs:Mins) : 17:41",
-		"Price": 58999
+		"Price": 58999,
+		"Fav" : false
 	},
 	{
 		"ProductId" : 9,
@@ -72,7 +76,8 @@ export const Mobiles_data = [
 		Front_camera: "10.5MP (ƒ/2.0)",
 		Weight: "7 oz.",
 		Battery_life : "(Hrs:Mins) : 13:18",
-		"Price": 79999
+		"Price": 79999,
+		"Fav" : false
 	},
 	{
 		"ProductId" : 2,
@@ -87,7 +92,8 @@ export const Mobiles_data = [
 		Front_camera : "12MP (ƒ/2.2)",
 		Weight: "8.2 oz",
 		Battery_life: "(Hrs:Mins): 16:45",
-		"Price": 109389
+		"Price": 109389,
+		"Fav" : false
 	},
 	{
 		"ProductId" : 4,
@@ -102,7 +108,8 @@ export const Mobiles_data = [
 		Front_camera: "13MP (f/2.2)",
 		Weight: "6.8 ounces",
 		Battery_life : "(Hrs:Mins): 11:21",
-		"Price": 42999
+		"Price": 42999,
+		"Fav" : false
 	},
 	{
 		"ProductId" : 6,
@@ -117,7 +124,8 @@ export const Mobiles_data = [
 		Front_camera: "12MP (ƒ/2.2)",
 		Weight: "5.9 oz",
 		Battery_life : "(Hrs:Mins) : 13:28",
-		"Price": 60999
+		"Price": 60999,
+		"Fav" : false
 	},
 	{
 		"ProductId" : 8,
@@ -132,7 +140,8 @@ export const Mobiles_data = [
 		Front_camera: "12MP (ƒ/1.9)",
 		Weight: "6.6 oz",
 		Battery_life : "(Hrs:Mins) : 10:53",
-		"Price": 119890
+		"Price": 119890,
+		"Fav" : false
 	},
 	{
 		"ProductId" : 10,
@@ -147,6 +156,7 @@ export const Mobiles_data = [
 		Front_camera: "16MP (ƒ/2.4)",
 		Weight: "7.4 oz",
 		Battery_life : "(Hrs:Mins) : 18:42",
-		"Price": 39999
+		"Price": 39999,
+		"Fav" : false
 	}
 ]

@@ -75,8 +75,14 @@
 .navbar-right .fav-icon{
 	font-size: 25px;
 	cursor: pointer;
+	color: white;
 }
 .navbar-right .user-icon{
 	font-size: 30px;
 	cursor: pointer;
+}
+.navbar-right .user-cart{
+	font-size: 24px;
+	cursor: pointer;
+	color: white;
 }

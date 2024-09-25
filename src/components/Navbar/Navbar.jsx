@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart,faUser,faBars} from '@fortawesome/free-solid-svg-icons'
+import { faHeart,faUser,faBars,faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
@@ -23,7 +23,12 @@ function Navbar() {
           </ul>
         </div>
         <div className="navbar-right">
-          <Link to='/user_favourites'><FontAwesomeIcon icon={faHeart} className="fav-icon" /></Link>
+          <Link to='/user_favourites'>
+            <FontAwesomeIcon icon={faHeart} style={{color: "#fffff"}} className="fav-icon" />
+          </Link>
+          <Link to='/user_cart'>
+            <FontAwesomeIcon icon={faCartShopping} style={{color: "#fffff"}} className='user-cart'/>
+          </Link>
           <FontAwesomeIcon
             icon={faUser}
             style={{ color: "#ffffff" }}
