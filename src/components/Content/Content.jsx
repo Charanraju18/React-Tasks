@@ -64,7 +64,7 @@ function Content() {
 
 
 
-    
+
   const [lpdata, setlpdata] = useState(Laptop_data)
 
   const lpSortByPrice = () =>{

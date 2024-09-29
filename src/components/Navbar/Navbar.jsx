@@ -25,10 +25,10 @@ function Navbar() {
           </ul>
         </div>
         <div className="navbar-right">
-          <Link to='/user_favourites/'>
+          <Link to='/React-Tasks/user_favourites/'>
             <FontAwesomeIcon icon={faHeart} style={{color: "#fffff"}} className="fav-icon" />
           </Link>
-          <Link to='/user_cart'>
+          <Link to='/React-Tasks/user_cart'>
             <FontAwesomeIcon icon={faCartShopping} style={{color: "#fffff"}} className='user-cart'/>
           </Link>
           <FontAwesomeIcon
